@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Factoriales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado">
+            
+            <div class="titulo">
+                <h2>Calculadora de Factoriales</h2>
+                <p>Ingresa un número entero positivo y descubre su factorial.</p>
+            </div>
+        </header>
+
+        <section class="contenido">
+
+            <form class="formulario">
+                <label for="numero">Número:</label>
+
+                <div class="grupo-entrada">
+                    <input type="number" id="numero" placeholder="Ejemplo: 5" required>                 
+                    <button type="button" id="btn-calcular">Calcular →</button>
+                    
+                </div>
+            </form>
+              <div class="anuncio">
+                <small id="mensaje"></small>
+              </div>
+            <section class="resultado">
+                <div class="check">✓</div>
+
+                <div>
+                    <h3>El factorial de <span id="num">1 </span> es:</h3>
+                    <p class="valor" id="factorial">1</p>
+                    <p class="operacion" id="formula">
+                       5! = 1 x 2 x 3 x 4 x 5 = 120
+                    </p>
+                </div>
+            </section>
+
+            <section class="ejemplos">
+                <h3>Ejemplos</h3>
+
+                <div class="lista-ejemplos">
+
+                    <article class="ejemplo">
+                        <h4>3! = 6</h4>
+                        <p>1 x 2 x 3</p>
+                    </article>
+
+                    <article class="ejemplo">
+                        <h4>4! = 24</h4>
+                        <p>1 x 2 x 3 x 4</p>
+                    </article>
+
+                    <article class="ejemplo">
+                        <h4>5! = 120</h4>
+                        <p>1 x 2 x 3 x 4 x 5</p>
+                    </article>
+
+                    <article class="ejemplo">
+                        <h4>6! = 720</h4>
+                        <p>1 x 2 x 3 x 4 x 5 x 6</p>
+                    </article>
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
